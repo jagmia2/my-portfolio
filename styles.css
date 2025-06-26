@@ -1,7 +1,196 @@
-.profile-pic {
+/* styles.css */
+
+/* === Global Styles === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #4a2c2c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
   object-fit: cover;
+  border-radius: 50%;
+}
+
+/* === Header === */
+header {
+  background-color: #968538;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Dark Mode Toggle Button === */
+#dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #1b1a1a;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* === Dark Mode Styles === */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1a1a1a;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+.dark-mode #projects,
+.dark-mode #contact,
+.dark-mode .about-section {
+  background-color: #3b3636;
+}
+
+.dark-mode #projects article {
+  background-color: #262626;
+  color: #f5f5f5;
+}
+
+.dark-mode #thank-you-message {
+  background-color: #264d26;
+  border-color: #3d803d;
+  color: #dfffd8;
+}
+
+/* === About Section === */
+.about-section {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  margin-top: 20px;
+  border: 3px solid #ddd;
+}
+
+/* === Projects Section === */
+#projects {
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+#projects article {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === Contact Section === */
+#contact {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact button {
+  padding: 12px;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact button:hover {
+  background-color: #333;
+}
+
+#thank-you-message {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #e6ffe6;
+  border: 1px solid #b3ffb3;
+  border-radius: 5px;
+  color: #006600;
+  text-align: center;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: #968538;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #233547;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
