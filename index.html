@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating interactive and user-friendly websites.</p>
+            <img src="images/photo.jpg" alt="Photo Big Almaty Lake" class="profile-pic">
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <article>
+                    <h3>Project One</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui enim, varius vel elit eget, vulputate lobortis lorem. Phasellus molestie non erat in sagittis. Quisque pretium, mi vitae malesuada facilisis, massa ipsum aliquet risus, a imperdiet urna tortor sit amet lorem. Nulla tincidunt euismod eros quis eleifend. Quisque semper interdum quam, lobortis volutpat libero fringilla a. Nulla at neque tristique, faucibus urna in, pharetra justo. Phasellus sit amet eros suscipit, malesuada felis nec, dignissim mauris. Duis blandit, arcu ac consectetur sollicitudin, massa metus rutrum mauris, non venenatis sem nisi vitae enim. Pellentesque ullamcorper dolor vel dui elementum, vel venenatis odio convallis. Nam condimentum in libero vel aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac blandit magna. Nunc aliquam nulla vitae purus maximus, et tempus nisi commodo. Etiam aliquam rhoncus neque, at laoreet sem sagittis a.</p>
+                </article>
+                <article>
+                    <h3>Project Two</h3>
+                    <p>Morbi eu lectus rhoncus eros tristique egestas nec eu urna. Aliquam ac urna ultrices, venenatis ipsum non, tempor neque. Phasellus ut pulvinar diam. Duis vulputate eros eu quam posuere, quis scelerisque ante euismod. Nunc sed purus ut lacus imperdiet luctus. Aenean dictum est et orci lacinia, in tempus justo semper. Cras fermentum dignissim turpis ac efficitur.</p>
+                </article>
+                <article>
+                    <h3>Project Three</h3>
+                    <p>Vestibulum non nulla dapibus, mattis dolor fringilla, ornare nulla. Praesent at nibh ut mauris condimentum condimentum in sit amet est. Ut a lobortis sapien. Praesent vel nulla sodales, congue dui eget, ullamcorper neque. Integer ut nulla sit amet felis gravida condimentum vitae consequat nisi. In hac habitasse platea dictumst. Etiam sed lobortis velit. Cras nec iaculis eros. Nunc rutrum arcu id ex placerat, ac placerat justo aliquet. Nam nec imperdiet sapien, ac egestas nunc. Aenean magna nunc, dictum rutrum tempus sit amet, tincidunt et odio.</p>
+                </article>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+        <footer>
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <p>Follow me on 
+                <a href="https://github.com" target="_blank">GitHub</a>, 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>.
+            </p>
+        </footer>
+    </body>
+</html>
